@@ -28,6 +28,17 @@
     };
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
+    let lastScrollY = window.scrollY;
+    const syncHeaderState = () => {
+        if (!header) return;
+        const y = window.scrollY;
+        if (y !== lastScrollY) {
+            header.classList.toggle('is-scrolled', y > 24);
+            lastScrollY = y;
+        }
+        requestAnimationFrame(syncHeaderState);
+    };
+    requestAnimationFrame(syncHeaderState);
 
     /* ---------- Mobile drawer ---------- */
     const burger = document.querySelector('[data-burger]');
@@ -58,6 +69,9 @@
             smoothWheel: true,
             smoothTouch: false,
         });
+
+        // Keep header state in sync when scroll is driven by Lenis transforms.
+        lenis.on('scroll', onScroll);
 
         const raf = (time) => { lenis.raf(time); requestAnimationFrame(raf); };
         requestAnimationFrame(raf);

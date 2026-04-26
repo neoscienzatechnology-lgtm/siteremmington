@@ -1,42 +1,42 @@
 /* ==========================================================================
-   Remington · Home — Design System combining Asimov editorial + FIAP premium
-   Brand anchor: deep navy #002744 · theme accent #FF6600 · cyan highlight #29F4D5
-   ========================================================================== */
+    Remington · Home — Identity aligned with R1 IA brandbook
+    Official palette: #8A2BE2 #2563FF #00D4FF #FFFFFF #D9D9E3
+    ========================================================================== */
 
 :root {
     /* Brand */
-    --navy-900: #00182B;
-    --navy-800: #002744;   /* brand primary */
-    --navy-700: #003F60;
-    --navy-600: #05283D;
-    --navy-500: #0A3E60;
-    --navy-400: #1A567E;
-    --ink: #0B1420;
-    --text: #2C3340;
-    --muted: #6B7380;
+    --navy-900: #070B18;
+    --navy-800: #0B1024;   /* brand primary */
+    --navy-700: #141A36;
+    --navy-600: #1B2246;
+    --navy-500: #232D5A;
+    --navy-400: #2A376B;
+    --ink: #0F1429;
+    --text: #1D2338;
+    --muted: #666E84;
 
     /* Accents */
-    --accent: #FF6600;     /* remington theme-color */
-    --accent-hover: #FF4500;
-    --accent-soft: #FF8A33;
-    --cyan: #29F4D5;       /* fiap turquoise — used sparingly */
-    --magenta: #ED145B;    /* sparingly */
-    --sun: #FFBA00;
-    --success: #2AC77D;
+    --accent: #8A2BE2;
+    --accent-hover: #7425BF;
+    --accent-soft: #2563FF;
+    --cyan: #00D4FF;
+    --magenta: #8A2BE2;
+    --sun: #2563FF;
+    --success: #00D4FF;
 
     /* Surfaces */
     --bg: #FFFFFF;
-    --surface: #F7F7F9;
-    --surface-2: #F0F2F5;
-    --surface-3: #E7EAEE;
+    --surface: #F7F8FC;
+    --surface-2: #EEF1F9;
+    --surface-3: #D9D9E3;
     --border: rgba(11, 20, 32, 0.1);
     --border-soft: rgba(11, 20, 32, 0.06);
     --border-strong: rgba(11, 20, 32, 0.2);
 
     /* Typography */
-    --font-display: 'Space Grotesk', 'Inter', system-ui, sans-serif;
-    --font-body: 'Inter', system-ui, sans-serif;
-    --font-mono: 'JetBrains Mono', 'Menlo', monospace;
+    --font-display: 'Rajdhani', 'Montserrat', system-ui, sans-serif;
+    --font-body: 'Montserrat', system-ui, sans-serif;
+    --font-mono: 'Montserrat', system-ui, sans-serif;
 
     /* Layout */
     --radius-sm: 10px;
@@ -53,10 +53,10 @@
     --dur: .35s;
 
     /* Shadows */
-    --shadow-sm: 0 2px 8px rgba(0, 39, 68, .06);
-    --shadow: 0 12px 32px -12px rgba(0, 39, 68, .18);
-    --shadow-lg: 0 24px 60px -20px rgba(0, 39, 68, .25);
-    --shadow-accent: 0 12px 40px -10px rgba(255, 102, 0, .45);
+    --shadow-sm: 0 2px 8px rgba(21, 29, 56, .08);
+    --shadow: 0 12px 32px -12px rgba(21, 29, 56, .2);
+    --shadow-lg: 0 24px 60px -20px rgba(21, 29, 56, .3);
+    --shadow-accent: 0 12px 40px -10px rgba(138, 43, 226, .5);
 }
 
 /* ========== RESET & BASE ========== */
@@ -147,11 +147,11 @@ h1, h2, h3, h4 {
 }
 .site-header__logo {
     flex: 0 0 auto; display: block;
-    filter: brightness(0) invert(1);
+    filter: drop-shadow(0 4px 18px rgba(5, 8, 22, .45));
     transition: filter var(--dur) var(--ease-out), transform var(--dur) var(--ease-out);
 }
 .site-header__logo img { height: 36px; width: auto; display: block; }
-.site-header.is-scrolled .site-header__logo { filter: none; }
+.site-header.is-scrolled .site-header__logo { filter: drop-shadow(0 2px 8px rgba(12, 18, 36, .16)); }
 .site-header__logo:hover { transform: translateY(-1px); }
 
 .site-nav { flex: 1; }
@@ -278,9 +278,9 @@ h1, h2, h3, h4 {
     color: #fff;
     box-shadow: var(--shadow-accent);
 }
-.btn--accent:hover { background: var(--accent-hover); box-shadow: 0 16px 50px -10px rgba(255, 102, 0, .55); }
-.btn--yellow { background: var(--sun); color: var(--ink); box-shadow: 0 12px 40px -10px rgba(255, 186, 0, .5); }
-.btn--yellow:hover { background: #FFD64E; }
+.btn--accent:hover { background: var(--accent-hover); box-shadow: 0 16px 50px -10px rgba(138, 43, 226, .58); }
+.btn--yellow { background: var(--sun); color: #fff; box-shadow: 0 12px 40px -10px rgba(158, 120, 255, .45); }
+.btn--yellow:hover { background: #B090FF; }
 
 .btn--ghost {
     background: rgba(255, 255, 255, .1);
@@ -329,7 +329,7 @@ h1, h2, h3, h4 {
 .section-title em {
     font-style: normal;
     font-family: var(--font-display);
-    background: linear-gradient(100deg, var(--accent) 0%, #FF944D 60%, var(--accent) 100%);
+    background: linear-gradient(100deg, var(--accent) 0%, var(--accent-soft) 60%, var(--accent) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -387,7 +387,7 @@ h1, h2, h3, h4 {
 .hero {
     position: relative;
     padding: clamp(120px, 14vw, 180px) 0 clamp(80px, 10vw, 120px);
-    background: radial-gradient(120% 80% at 80% 0%, #0b3e63 0%, #001b31 45%, #00101f 100%);
+    background: radial-gradient(120% 80% at 80% 0%, #1A1F4D 0%, #0B1024 46%, #05070F 100%);
     color: #fff;
     overflow: hidden;
 }
@@ -433,7 +433,7 @@ h1, h2, h3, h4 {
 }
 .hero__title em {
     font-style: normal;
-    background: linear-gradient(100deg, var(--accent) 0%, #FFB066 50%, var(--accent) 100%);
+    background: linear-gradient(100deg, var(--accent) 0%, var(--accent-soft) 50%, var(--accent) 100%);
     -webkit-background-clip: text; background-clip: text; color: transparent;
 }
 .hero__sub {
@@ -1119,7 +1119,7 @@ h1, h2, h3, h4 {
 }
 .cta-final__title em {
     font-style: normal;
-    background: linear-gradient(100deg, var(--accent) 0%, #FFB066 50%, var(--accent) 100%);
+    background: linear-gradient(100deg, var(--accent) 0%, var(--accent-soft) 50%, var(--accent) 100%);
     -webkit-background-clip: text; background-clip: text; color: transparent;
 }
 .cta-final__sub {
@@ -1543,7 +1543,7 @@ h1, h2, h3, h4 {
 /* ========== DEPOIMENTOS PAGE ========== */
 .dep-hero {
     padding: clamp(120px, 14vw, 180px) 0 clamp(80px, 10vw, 120px);
-    background: radial-gradient(120% 80% at 80% 0%, #0b3e63 0%, #001b31 45%, #00101f 100%);
+    background: radial-gradient(120% 80% at 80% 0%, #1A1F4D 0%, #0B1024 46%, #05070F 100%);
     color: #fff;
     overflow: hidden;
     position: relative;
@@ -1591,7 +1591,7 @@ h1, h2, h3, h4 {
 
 .dep-hero__title em {
     font-style: normal;
-    background: linear-gradient(100deg, var(--accent) 0%, #FFB066 50%, var(--accent) 100%);
+    background: linear-gradient(100deg, var(--accent) 0%, var(--accent-soft) 50%, var(--accent) 100%);
     -webkit-background-clip: text; background-clip: text; color: transparent;
 }
 
