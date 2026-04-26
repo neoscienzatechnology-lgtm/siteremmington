@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#002744" />
+<title>Remington · Educação para o Futuro</title>
+<meta name="description" content="Há mais de 56 anos formando profissionais prontos para o mercado. Cursos profissionalizantes em Ribeirão Preto com foco em tecnologia, inteligência artificial e empregabilidade." />
+<link rel="icon" type="image/png" href="assets/favicon.png" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<!-- Font Awesome (for social / arrow icons, same family used in reference) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+<!-- Lenis smooth scroll -->
+<link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css" />
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ░░░░░░░░░░░░░░░ PAGE LOADER ░░░░░░░░░░░░░░░ -->
+<div class="page-loader" data-loader>
+    <div class="page-loader__mark">
+        <span>R</span>
+        <span>E</span>
+        <span>M</span>
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
+        <span>T</span>
+        <span>O</span>
+        <span>N</span>
+    </div>
+</div>
+
+<!-- ░░░░░░░░░░░░░░░ HEADER ░░░░░░░░░░░░░░░ -->
+<header class="site-header" data-header>
+    <div class="container site-header__inner">
+        <a class="site-header__logo" href="#top" aria-label="Remington — Home">
+            <img src="assets/logo-remington.png" alt="Remington — Educação para o Futuro" />
+        </a>
+
+        <nav class="site-nav" aria-label="Navegação principal">
+            <ul>
+                <li><a href="#institucional">Sobre</a></li>
+                <li>
+                    <a href="#cursos" class="has-sub">Cursos <i class="fa-solid fa-chevron-down"></i></a>
+                    <div class="site-nav__dropdown" role="menu">
+                        <a href="#cursos" role="menuitem"><span class="dot" style="background:#FF6600"></span>InovaTech</a>
+                        <a href="#cursos" role="menuitem"><span class="dot" style="background:#FFBA00"></span>TechKids</a>
+                        <a href="#cursos" role="menuitem"><span class="dot" style="background:#00AEFF"></span>Auxiliar de Veterinário</a>
+                        <a href="#cursos" role="menuitem"><span class="dot" style="background:#FF1307"></span>Vip</a>
+                        <a href="#cursos" role="menuitem"><span class="dot" style="background:#2AC77D"></span>Minecraft</a>
+                        <a href="#cursos" role="menuitem"><span class="dot" style="background:#8A7BFF"></span>Roblox</a>
+                    </div>
+                </li>
+                <li><a href="#diferenciais">Diferenciais</a></li>
+                <li><a href="#programa">Empregabilidade</a></li>
+                <li><a href="depoimentos.html">Depoimentos</a></li>
+                <li><a href="#blog">Blog</a></li>
+            </ul>
+        </nav>
+
+        <div class="site-header__ctas">
+            <a class="link-quiet" href="#contato">Entrar</a>
+            <a class="btn btn--primary" href="#contato">
+                <span>Matricule-se</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <button class="site-header__burger" aria-label="Abrir menu" data-burger>
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="mobile-drawer" data-drawer aria-hidden="true">
+        <div class="mobile-drawer__inner">
+            <a href="#institucional" data-close>Sobre</a>
+            <a href="#cursos" data-close>Cursos</a>
+            <a href="#diferenciais" data-close>Diferenciais</a>
+            <a href="#programa" data-close>Empregabilidade</a>
+            <a href="depoimentos.html" data-close>Depoimentos</a>
+            <a href="#blog" data-close>Blog</a>
+            <div class="mobile-drawer__ctas">
+                <a class="btn btn--ghost" href="#contato" data-close>Entrar</a>
+                <a class="btn btn--primary" href="#contato" data-close><span>Matricule-se</span><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main id="top">
+
+<!-- ░░░░░░░░░░░░░░░ HERO ░░░░░░░░░░░░░░░ -->
+<section class="hero" data-scene="hero">
+    <div class="hero__bg">
+        <div class="hero__grid"></div>
+        <div class="hero__glow hero__glow--1"></div>
+        <div class="hero__glow hero__glow--2"></div>
+    </div>
+
+    <div class="container hero__inner">
+        <div class="hero__left">
+            <span class="eyebrow" data-reveal>
+                <span class="eyebrow__dot"></span>
+                <span>Educação para o Futuro · desde 1969</span>
+            </span>
+
+            <h1 class="hero__title" data-reveal-lines>
+                <span class="line"><span>Formamos quem</span></span>
+                <span class="line"><span>vai <em>programar</em> o</span></span>
+                <span class="line"><span>próximo capítulo</span></span>
+                <span class="line"><span>do mercado.</span></span>
+            </h1>
+
+            <p class="hero__sub" data-reveal>
+                Há <strong>56 anos</strong> qualificando profissionais em Ribeirão Preto. Mais de <strong>50 cursos</strong> que unem fundamentos clássicos à inteligência artificial, IoT e empregabilidade real.
+            </p>
+
+            <div class="hero__ctas" data-reveal>
+                <a class="btn btn--accent" href="#cursos">
+                    <span>Explorar cursos</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a class="btn btn--ghost" href="#programa">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <span>Prepara, Qualifica e Encaminha</span>
+                </a>
+            </div>
+
+            <div class="hero__meta" data-reveal>
+                <div>
+                    <span class="hero__meta-num" data-counter="56">0</span><span class="hero__meta-plus">+</span>
+                    <p>anos formando profissionais</p>
+                </div>
+                <div>
+                    <span class="hero__meta-num" data-counter="50">0</span><span class="hero__meta-plus">+</span>
+                    <p>qualificações profissionais</p>
+                </div>
+                <div>
+                    <span class="hero__meta-num" data-counter="98">0</span><span class="hero__meta-plus">%</span>
+                    <p>satisfação dos alunos</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mockup stage -->
+        <div class="hero__stage" data-parallax-stage>
+            <div class="mockup mockup--laptop" data-parallax="0.05" aria-hidden="true">
+                <div class="mockup__bar">
+                    <span></span><span></span><span></span>
+                    <div class="mockup__url">remington.com.br/inovatech</div>
+                </div>
+                <div class="mockup__screen">
+                    <img src="assets/mockup-inovatech.png" alt="InovaTech — Programação, IA e IoT" />
+                    <div class="mockup__tag">
+                        <i class="fa-solid fa-bolt"></i>
+                        InovaTech · Turma 2026
+                    </div>
+                </div>
+                <div class="mockup__reflection"></div>
+            </div>
+
+            <div class="mockup mockup--phone" data-parallax="-0.08" aria-hidden="true">
+                <div class="mockup__notch"></div>
+                <div class="mockup__screen">
+                    <img src="assets/mockup-techkids.png" alt="TechKids — Tecnologia, automação e IA para crianças" />
+                    <div class="mockup__tag mockup__tag--pink">
+                        <i class="fa-solid fa-robot"></i>
+                        TechKids · 8–14 anos
+                    </div>
+                </div>
+            </div>
+
+            <!-- Floating chips -->
+            <div class="chip chip--1" data-parallax="0.12"><i class="fa-solid fa-code"></i> Python</div>
+            <div class="chip chip--2" data-parallax="-0.15"><i class="fa-solid fa-microchip"></i> IA</div>
+            <div class="chip chip--3" data-parallax="0.18"><i class="fa-solid fa-wifi"></i> IoT</div>
+
+            <!-- Badge 57 anos -->
+            <div class="badge-57" data-parallax="-0.05" aria-hidden="true">
+                <img src="assets/selo-57-anos.png" alt="" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Marquee -->
+    <div class="hero__marquee" aria-hidden="true">
+        <div class="marquee">
+            <div class="marquee__track">
+                <span>Ribeirão Preto</span><span>·</span>
+                <span>56 anos</span><span>·</span>
+                <span>Formação profissional</span><span>·</span>
+                <span>Inteligência Artificial</span><span>·</span>
+                <span>Prepara, Qualifica e Encaminha</span><span>·</span>
+                <span>Carreira tech</span><span>·</span>
+                <span>Educação para o futuro</span><span>·</span>
+                <span>Ribeirão Preto</span><span>·</span>
+                <span>56 anos</span><span>·</span>
+                <span>Formação profissional</span><span>·</span>
+                <span>Inteligência Artificial</span><span>·</span>
+                <span>Prepara, Qualifica e Encaminha</span><span>·</span>
+                <span>Carreira tech</span><span>·</span>
+                <span>Educação para o futuro</span><span>·</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ░░░░░░░░░░░░░░░ INSTITUCIONAL ░░░░░░░░░░░░░░░ -->
+<section id="institucional" class="institutional" data-scene>
+    <div class="container institutional__grid">
+        <div class="institutional__copy">
+            <span class="eyebrow eyebrow--dark" data-reveal>
+                <span class="eyebrow__dot"></span>
+                <span>Quem somos</span>
+            </span>
+            <h2 class="section-title" data-reveal-lines>
+                <span class="line"><span>A maior rede de</span></span>
+                <span class="line"><span>formação profissional</span></span>
+                <span class="line"><span>de <em>Ribeirão Preto</em>.</span></span>
+            </h2>
+            <p class="section-lead" data-reveal>
+                A Remington nasceu para resolver uma pergunta simples: como preparar pessoas para o mercado real? Ao longo de mais de meio século, criamos <strong>mais de 50 qualificações profissionais</strong> com um propósito único — transformar estudo em carreira.
+            </p>
+
+            <div class="institutional__pillars" data-reveal-stagger>
+                <article>
+                    <div class="pill-icon"><i class="fa-solid fa-compass"></i></div>
+                    <h3>Missão</h3>
+                    <p>Melhorar a vida dos nossos alunos através da formação profissional.</p>
+                </article>
+                <article>
+                    <div class="pill-icon"><i class="fa-solid fa-mountain-sun"></i></div>
+                    <h3>Visão</h3>
+                    <p>A formação profissional é o melhor caminho para o seu sucesso.</p>
+                </article>
+                <article>
+                    <div class="pill-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Valores</h3>
+                    <p>Integridade, Sinceridade, Fidelidade, Humildade, Dignidade e Verdade.</p>
+                </article>
+            </div>
+        </div>
+
+        <aside class="institutional__visual" data-reveal>
+            <div class="institutional__selo">
+                <img src="assets/selo-57-anos.png" alt="57 anos de Remington" />
+            </div>
+            <div class="institutional__stat">
+                <span class="num"><span data-counter="56">0</span><em>+</em></span>
+                <span class="label">anos<br/>de história</span>
+            </div>
+            <ul class="institutional__bullets">
+                <li><i class="fa-solid fa-check"></i> Aulas presenciais em Ribeirão Preto</li>
+                <li><i class="fa-solid fa-check"></i> Programa de empregabilidade ativo</li>
+                <li><i class="fa-solid fa-check"></i> Certificação reconhecida pelo mercado</li>
+                <li><i class="fa-solid fa-check"></i> Professores com vivência real na indústria</li>
+            </ul>
+        </aside>
+    </div>
+</section>
+
+<!-- ░░░░░░░░░░░░░░░ CURSOS ░░░░░░░░░░░░░░░ -->
+<section id="cursos" class="courses" data-scene>
+    <div class="container">
+        <header class="section-head">
+            <div>
+                <span class="eyebrow" data-reveal><span class="eyebrow__dot"></span><span>Cursos & Trilhas</span></span>
+                <h2 class="section-title" data-reveal-lines>
+                    <span class="line"><span>Seis produtos,</span></span>
+                    <span class="line"><span>um único objetivo:</span></span>
+                    <span class="line"><span><em>sua próxima conquista.</em></span></span>
+                </h2>
+            </div>
+            <p class="section-side" data-reveal>
+                Do profissionalizante que acelera sua entrada no mercado às trilhas gratuitas que plantam a primeira semente da tecnologia. Cada curso foi desenhado para um momento real de carreira.
+            </p>
+        </header>
+
+        <div class="courses__grid">
+
+            <!-- InovaTech -->
+            <a class="course-card course-card--wide" style="--accent:#FF6600;" href="#contato" data-reveal-card>
+                <div class="course-card__media">
+                    <img src="assets/cover-inovatech.png" alt="" loading="lazy" />
+                    <span class="course-card__flag">
+                        <img src="assets/icon-inovatech.png" alt="" />
+                    </span>
+                </div>
+                <div class="course-card__body">
+                    <span class="course-card__tag">Profissionalizante · Tech</span>
+                    <h3>InovaTech</h3>
+                    <p>Programação, Inteligência Artificial e IoT para resolver problemas reais. Forma front-end, back-end, analistas de dados júnior, devs em IoT e Python.</p>
+                    <span class="course-card__cta">Conheça o curso <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                </div>
+            </a>
+
+            <!-- TechKids -->
+            <a class="course-card" style="--accent:#FFBA00;" href="#contato" data-reveal-card>
+                <div class="course-card__media">
+                    <img src="assets/cover-techkids.png" alt="" loading="lazy" />
+                    <span class="course-card__flag">
+                        <img src="assets/icon-techkids.png" alt="" />
+                    </span>
+                </div>
+                <div class="course-card__body">
+                    <span class="course-card__tag">Profissionalizante · Kids</span>
+                    <h3>TechKids</h3>
+                    <p>Automação, IA, robótica e programação com Scratch e Minecraft. Estimula criatividade e raciocínio lógico das crianças.</p>
+                    <span class="course-card__cta">Conheça o curso <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                </div>
+            </a>
+
+            <!-- Auxiliar Veterinário -->
+            <a class="course-card" style="--accent:#00AEFF;" href="#contato" data-reveal-card>
+                <div class="course-card__media">
+                    <img src="assets/cover-vet.jpg" alt="" loading="lazy" />
+                    <span class="course-card__flag">
+                        <img src="assets/icon-vet.png" alt="" />
+                    </span>
+                </div>
+                <div class="course-card__body">
+                    <span class="course-card__tag">Profissionalizante · Saúde</span>
+                    <h3>Auxiliar de Veterinário</h3>
+                    <p>Capacitação prática para atuar em clínicas, petshops, hospitais veterinários e centros cirúrgicos.</p>
+                    <span class="course-card__cta">Conheça o curso <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                </div>
+            </a>
+
+            <!-- VIP -->
+            <a class="course-card" style="--accent:#FF1307;" href="#contato" data-reveal-card>
+                <div class="course-card__media">
+                    <img src="assets/cover-vip.jpg" alt="" loading="lazy" />
+                    <span class="course-card__flag">
+                        <img src="assets/icon-vip.png" alt="" />
+                    </span>
+                </div>
+                <div class="course-card__body">
+                    <span class="course-card__tag">Curso Vip · Rápido</span>
+                    <h3>Vip</h3>
+                    <p>Conteúdo personalizado e focado em resultados a curto prazo. Para quem precisa do mercado agora.</p>
+                    <span class="course-card__cta">Conheça o curso <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                </div>
+            </a>
+
+            <!-- Minecraft -->
+            <a class="course-card course-card--soft" style="--accent:#2AC77D;" href="#contato" data-reveal-card>
+                <div class="course-card__body">
+                    <span class="course-card__tag">Gratuito · Kids</span>
+                    <h3>Minecraft</h3>
+                    <p>Criatividade, lógica e trabalho em equipe dentro de mundos infinitos de blocos. Aprendizado divertido.</p>
+                    <span class="course-card__cta">Inscreva-se <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                </div>
+                <div class="course-card__mini-icon"><img src="assets/icon-minecraft.png" alt="" /></div>
+            </a>
+
+            <!-- Roblox -->
+            <a class="course-card course-card--soft" style="--accent:#8A7BFF;" href="#contato" data-reveal-card>
+                <div class="course-card__body">
+                    <span class="course-card__tag">Gratuito · Kids</span>
+                    <h3>Roblox</h3>
+                    <p>Criação e publicação de jogos, do zero ao expert. Introduz lógica, design e empreendedorismo.</p>
+                    <span class="course-card__cta">Inscreva-se <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                </div>
+                <div class="course-card__mini-icon"><img src="assets/icon-roblox.png" alt="" /></div>
+            </a>
+
+        </div>
+    </div>
+</section>
+
+<!-- ░░░░░░░░░░░░░░░ SHOWCASE MOCKUPS ░░░░░░░░░░░░░░░ -->
+<section class="showcase" data-scene>
+    <div class="container">
+        <header class="section-head">
+            <div>
+                <span class="eyebrow" data-reveal><span class="eyebrow__dot"></span><span>Em destaque · Trilha Tech</span></span>
+                <h2 class="section-title" data-reveal-lines>
+                    <span class="line"><span>A <em>tecnologia</em> que</span></span>
+                    <span class="line"><span>vai transformar</span></span>
+                    <span class="line"><span>duas gerações.</span></span>
+                </h2>
+            </div>
+            <p class="section-side" data-reveal>
+                Nossos dois produtos-destaque cobrem a jornada completa de quem quer viver de tecnologia — do primeiro contato na infância à formação profissional que abre vagas em front-end, back-end, dados e IoT.
+            </p>
+        </header>
+
+        <!-- InovaTech showcase row -->
+        <div class="showcase__row" data-scene>
+            <div class="showcase__copy" data-reveal>
+                <span class="showcase__kicker" style="color:#FF6600">// InovaTech</span>
+                <h3 class="showcase__title">Para quem quer entrar no mercado tech em <em>12 meses</em>.</h3>
+                <p>Um programa multidisciplinar que combina programação, inteligência artificial e internet das coisas. Projetos reais, professores do mercado e certificações reconhecidas.</p>
+                <ul class="showcase__list">
+                    <li><i class="fa-solid fa-check"></i> Programador Front-End &amp; Back-End</li>
+                    <li><i class="fa-solid fa-check"></i> Analista de Dados Júnior</li>
+                    <li><i class="fa-solid fa-check"></i> Programação em Python &amp; IA</li>
+                    <li><i class="fa-solid fa-check"></i> Desenvolvedor em IoT</li>
+                </ul>
+                <a class="btn btn--accent" href="#contato">
+                    <span>Quero estudar InovaTech</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="showcase__mockup showcase__mockup--laptop" data-reveal>
+                <div class="mockup mockup--laptop mockup--large">
+                    <div class="mockup__bar">
+                        <span></span><span></span><span></span>
+                        <div class="mockup__url">inovatech.remington.com.br</div>
+                    </div>
+                    <div class="mockup__screen">
+                        <img src="assets/mockup-inovatech.png" alt="InovaTech — AI · IoT · Código" />
+                        <div class="mockup__tag"><i class="fa-solid fa-bolt"></i> AI · IoT · Código</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TechKids showcase row (reversed) -->
+        <div class="showcase__row showcase__row--reverse" data-scene>
+            <div class="showcase__copy" data-reveal>
+                <span class="showcase__kicker" style="color:#FFBA00">// TechKids</span>
+                <h3 class="showcase__title">A <em>primeira linha de código</em> de uma criança deveria mudar o mundo dela.</h3>
+                <p>Uma trilha completa que combina automação, IA, robótica, design digital, segurança na internet e projetos interdisciplinares — pensada para crianças de 8 a 14 anos.</p>
+                <ul class="showcase__list">
+                    <li><i class="fa-solid fa-check"></i> Scratch, Minecraft &amp; modelagem 3D</li>
+                    <li><i class="fa-solid fa-check"></i> Design digital &amp; apps No-Code</li>
+                    <li><i class="fa-solid fa-check"></i> Introdução à IA &amp; robótica</li>
+                    <li><i class="fa-solid fa-check"></i> Segurança na internet</li>
+                </ul>
+                <a class="btn btn--accent btn--yellow" href="#contato">
+                    <span>Quero matricular meu filho</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="showcase__mockup showcase__mockup--phone" data-reveal>
+                <div class="mockup mockup--phone mockup--large">
+                    <div class="mockup__notch"></div>
+                    <div class="mockup__screen">
+                        <img src="assets/mockup-techkids.png" alt="TechKids — Robótica e IA para crianças" />
+                        <div class="mockup__tag mockup__tag--pink">
+                            <i class="fa-solid fa-robot"></i> 8–14 anos
+                        </div>
+                    </div>
+                </div>
+                <div class="chip chip--4"><i class="fa-solid fa-puzzle-piece"></i> Scratch</div>
+                <div class="chip chip--5"><i class="fa-solid fa-cube"></i> 3D</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ░░░░░░░░░░░░░░░ DIFERENCIAIS ░░░░░░░░░░░░░░░ -->
+<section id="diferenciais" class="features" data-scene>
+    <div class="container">
+        <header class="section-head">
+            <div>
+                <span class="eyebrow" data-reveal><span class="eyebrow__dot"></span><span>Por que estudar na Remington</span></span>
+                <h2 class="section-title" data-reveal-lines>
+                    <span class="line"><span>Nove motivos</span></span>
+                    <span class="line"><span>para escolher</span></span>
+                    <span class="line"><span><em>a Remington.</em></span></span>
+                </h2>
+            </div>
+            <p class="section-side" data-reveal>
+                Cada detalhe foi pensado para garantir algo que poucos lugares entregam: uma experiência de estudo alinhada com o que o mercado pede agora.
+            </p>
+        </header>
+
+        <div class="features__grid">
+            <article class="feature" data-reveal-card>
+                <span class="feature__num">01</span>
+                <h3>56 anos de experiência</h3>
+                <p>Mais de meio século dedicados a uma única coisa: formação profissional que funciona.</p>
+            </article>
+            <article class="feature" data-reveal-card>
+                <span class="feature__num">02</span>
+                <h3>Infraestrutura de última geração</h3>
+                <p>Laboratórios equipados, ambientes confortáveis e tecnologia acessível para cada turma.</p>
+            </article>
+            <article class="feature" data-reveal-card>
+                <span class="feature__num">03</span>
+                <h3>Professores qualificados</h3>
+                <p>Time com vivência real na indústria — nossos professores têm quilometragem de mercado.</p>
+            </article>
+            <article class="feature" data-reveal-card>
+                <span class="feature__num">04</span>
+                <h3>Teoria e prática juntas</h3>
+                <p>Aulas construídas em torno de projetos reais. O que você aprende na segunda, aplica na terça.</p>
+            </article>
+            <article class="feature" data-reveal-card>
+                <span class="feature__num">05</span>
+                <h3>Acompanhamento pedagógico</h3>
+                <p>Você tem um time ao lado durante todo o curso. Não aprender não é uma opção.</p>
+            </article>
+            <article class="feature" data-reveal-card>
+                <span class="feature__num">06</span>
+                <h3>Aula presencial</h3>
+                <p>Em Ribeirão Preto, no nosso campus próprio. Troca, contato e bancada ao vivo.</p>
+            </article>
+            <article class="feature" data-reveal-card>
+                <span class="feature__num">07</span>
+                <h3>Carga horária inteligente</h3>
+                <p>Apenas 2 horas semanais. Encaixa na rotina de quem estuda, trabalha ou ambos.</p>
+            </article>
+            <article class="feature" data-reveal-card>
+                <span class="feature__num">08</span>
+                <h3>Programa de empregabilidade</h3>
+                <p>Prepara, Qualifica e Encaminha: preparamos o aluno e encaminhamos para vagas reais.</p>
+            </article>
+            <article class="feature" data-reveal-card>
+                <span class="feature__num">09</span>
+                <h3>Garantia de ensino</h3>
+                <p>Se você estuda, você aprende. É um compromisso nosso — não uma promessa de marketing.</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ░░░░░░░░░░░░░░░ PROGRAMA EMPREGABILIDADE ░░░░░░░░░░░░░░░ -->
+<section id="programa" class="program" data-scene>
+    <div class="container program__grid">
+        <div class="program__copy">
+            <span class="eyebrow" data-reveal><span class="eyebrow__dot"></span><span>Programa exclusivo</span></span>
+            <h2 class="section-title" data-reveal-lines>
+                <span class="line"><span>Prepara,</span></span>
+                <span class="line"><span>Qualifica e</span></span>
+                <span class="line"><span><em>Encaminha.</em></span></span>
+            </h2>
+            <p class="section-lead" data-reveal>
+                A Remington não para quando o curso acaba — é só o começo. Nosso programa de empregabilidade desenvolve as aptidões que o mercado procura e conecta você com empresas parceiras que estão contratando agora.
+            </p>
+
+            <div class="program__steps" data-reveal-stagger>
+                <article>
+                    <span class="program__step-num">01</span>
+                    <h3>Prepara</h3>
+                    <p>Identificação de perfil, postura profissional, comunicação e habilidades comportamentais.</p>
+                </article>
+                <article>
+                    <span class="program__step-num">02</span>
+                    <h3>Qualifica</h3>
+                    <p>Curso técnico intensivo com projetos práticos, mentorias e certificação reconhecida.</p>
+                </article>
+                <article>
+                    <span class="program__step-num">03</span>
+                    <h3>Encaminha</h3>
+                    <p>Conexão direta com empresas parceiras, banco de currículos e vagas exclusivas.</p>
+                </article>
+            </div>
+
+            <div class="program__ctas" data-reveal>
+                <a class="btn btn--primary" href="#contato"><span>Conheça o programa</span><i class="fa-solid fa-arrow-right"></i></a>
+                <a class="btn btn--ghost btn--ghost-dark" href="#contato"><span>Cadastrar currículo</span></a>
+            </div>
+        </div>
+
+        <aside class="program__stats" data-reveal-stagger>
+            <div class="stat">
+                <span class="stat__num"><span data-counter="1000">0</span><em>+</em></span>
+                <span class="stat__label">alunos contratados ao longo dos últimos anos</span>
+            </div>
+            <div class="stat">
+                <span class="stat__num"><span data-counter="50">0</span><em>+</em></span>
+                <span class="stat__label">empresas parceiras em Ribeirão Preto e região</span>
+            </div>
+            <div class="stat">
+                <span class="stat__num"><span data-counter="9">0</span><em>,9</em></span>
+                <span class="stat__label">nota de satisfação (NPS) dos nossos egressos</span>
+            </div>
+            <div class="stat stat--highlight">
+                <i class="fa-solid fa-briefcase"></i>
+                <h4>Vagas abertas agora</h4>
+                <p>Atualizamos o quadro semanalmente com posições exclusivas para alunos Remington.</p>
+                <a href="#contato">Ver vagas <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </aside>
+    </div>
+</section>
+
+<!-- ░░░░░░░░░░░░░░░ JOVENS APRENDIZES ░░░░░░░░░░░░░░░ -->
+<section id="alumni" class="alumni-preview" data-scene>
+    <div class="container">
+        <header class="section-head">
+            <div>
+                <span class="eyebrow" data-reveal><span class="eyebrow__dot"></span><span>Jovens Aprendizes</span></span>
+                <h2 class="section-title" data-reveal-lines>
+                    <span class="line"><span>Alunos que</span></span>
+                    <span class="line"><span>conquistaram sua</span></span>
+                    <span class="line"><span><em>primeira vaga.</em></span></span>
+                </h2>
+            </div>
+            <p class="section-side" data-reveal>
+                Mais de 1.000 alunos encaminhados ao mercado nos últimos anos. Veja quem deu o primeiro passo com a Remington — e onde chegou.
+            </p>
+        </header>
+
+        <div class="alumni-preview__grid">
+
+            <article class="alumni-card" style="--card-accent:#FF6600;" data-reveal-card>
+                <div class="alumni-card__top">
+                    <div class="alumni-card__avatar">AL</div>
+                    <div class="alumni-card__info">
+                        <div class="alumni-card__name">Ana Lima</div>
+                        <div class="alumni-card__curso">InovaTech</div>
+                    </div>
+                </div>
+                <div class="alumni-card__job">
+                    <span class="alumni-card__role">Desenvolvedora Front-End Jr.</span>
+                    <span class="alumni-card__company"><i class="fa-solid fa-building"></i> Stefanini · Ribeirão Preto</span>
+                </div>
+                <p class="alumni-card__quote">A Remington me deu a base técnica e a confiança para encarar minha primeira entrevista na área de tecnologia.</p>
+            </article>
+
+            <article class="alumni-card" style="--card-accent:#FF6600;" data-reveal-card>
+                <div class="alumni-card__top">
+                    <div class="alumni-card__avatar">LF</div>
+                    <div class="alumni-card__info">
+                        <div class="alumni-card__name">Lucas Ferreira</div>
+                        <div class="alumni-card__curso">InovaTech</div>
+                    </div>
+                </div>
+                <div class="alumni-card__job">
+                    <span class="alumni-card__role">Analista de Suporte Jr.</span>
+                    <span class="alumni-card__company"><i class="fa-solid fa-building"></i> Raízen · Ribeirão Preto</span>
+                </div>
+                <p class="alumni-card__quote">Aprendi na prática o que o mercado precisava. Três meses após me formar, já estava empregado.</p>
+            </article>
+
+            <article class="alumni-card" style="--card-accent:#00AEFF;" data-reveal-card>
+                <div class="alumni-card__top">
+                    <div class="alumni-card__avatar">MS</div>
+                    <div class="alumni-card__info">
+                        <div class="alumni-card__name">Mariana Souza</div>
+                        <div class="alumni-card__curso">Auxiliar de Veterinário</div>
+                    </div>
+                </div>
+                <div class="alumni-card__job">
+                    <span class="alumni-card__role">Auxiliar Veterinária</span>
+                    <span class="alumni-card__company"><i class="fa-solid fa-building"></i> PetLove · Ribeirão Preto</span>
+                </div>
+                <p class="alumni-card__quote">O curso me abriu portas que eu não sabia que existiam. Hoje trabalho com o que sempre amei.</p>
+            </article>
+
+        </div>
+
+        <div class="alumni-preview__cta" data-reveal>
+            <a class="btn btn--primary" href="depoimentos.html">
+                <span>Ver todos os depoimentos</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ░░░░░░░░░░░░░░░ BLOG ░░░░░░░░░░░░░░░ -->
+<section id="blog" class="blog" data-scene>
+    <div class="container">
+        <header class="section-head">
+            <div>
+                <span class="eyebrow" data-reveal><span class="eyebrow__dot"></span><span>Blog Remington</span></span>
+                <h2 class="section-title" data-reveal-lines>
+                    <span class="line"><span>Conteúdo que abre</span></span>
+                    <span class="line"><span>portas antes do</span></span>
+                    <span class="line"><span><em>primeiro dia de aula.</em></span></span>
+                </h2>
+            </div>
+            <p class="section-side" data-reveal>
+                Dicas, análises de carreira e estudos sobre o mundo profissional. Para quem está decidindo, começando ou trocando de rumo.
+            </p>
+        </header>
+
+        <div class="blog__grid">
+            <a class="post" href="#blog" data-reveal-card>
+                <div class="post__media">
+                    <img src="assets/blog-1.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="post__body">
+                    <span class="post__cat">Carreira</span>
+                    <h3>Como é o curso profissionalizante?</h3>
+                    <p>Um panorama sobre o formato, duração, pré-requisitos e o que esperar do primeiro dia ao certificado.</p>
+                    <span class="post__cta">Leia mais <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+            <a class="post" href="#blog" data-reveal-card>
+                <div class="post__media">
+                    <img src="assets/blog-2.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="post__body">
+                    <span class="post__cat">Mercado</span>
+                    <h3>A importância dos cursos profissionalizantes na construção da carreira</h3>
+                    <p>Por que a formação técnica se tornou a alavanca de carreira mais rápida na última década.</p>
+                    <span class="post__cta">Leia mais <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+            <a class="post" href="#blog" data-reveal-card>
+                <div class="post__media">
+                    <img src="assets/blog-3.jpg" alt="" loading="lazy" />
+                </div>
+                <div class="post__body">
+                    <span class="post__cat">Orientação</span>
+                    <h3>Quem pode fazer um curso profissionalizante?</h3>
+                    <p>Da primeira vaga à transição de carreira: o perfil real dos estudantes que se formam na Remington.</p>
+                    <span class="post__cta">Leia mais <i class="fa-solid fa-arrow-right"></i></span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ░░░░░░░░░░░░░░░ CTA FINAL ░░░░░░░░░░░░░░░ -->
+<section id="contato" class="cta-final" data-scene>
+    <div class="container cta-final__inner">
+        <div class="cta-final__bg">
+            <div class="cta-final__glow"></div>
+            <div class="cta-final__grid"></div>
+        </div>
+
+        <span class="eyebrow eyebrow--on-dark" data-reveal>
+            <span class="eyebrow__dot"></span>
+            <span>Próximo passo</span>
+        </span>
+        <h2 class="cta-final__title" data-reveal-lines>
+            <span class="line"><span>Pronto para começar</span></span>
+            <span class="line"><span><em>a sua próxima carreira?</em></span></span>
+        </h2>
+        <p class="cta-final__sub" data-reveal>Preencha o formulário ao lado ou fale direto no WhatsApp — nosso time responde em menos de 1 hora em dias úteis.</p>
+
+        <div class="cta-final__grid-inner" data-reveal>
+            <form class="cta-form" onsubmit="event.preventDefault(); alert('Obrigado! Em breve entraremos em contato.');">
+                <div class="field">
+                    <label for="f-nome">Nome</label>
+                    <input id="f-nome" type="text" placeholder="Seu nome completo" required />
+                </div>
+                <div class="field">
+                    <label for="f-email">E-mail</label>
+                    <input id="f-email" type="email" placeholder="voce@exemplo.com" required />
+                </div>
+                <div class="field">
+                    <label for="f-fone">Telefone</label>
+                    <input id="f-fone" type="tel" placeholder="(16) 9 9999-9999" required />
+                </div>
+                <div class="field">
+                    <label for="f-curso">Curso de interesse</label>
+                    <select id="f-curso">
+                        <option>InovaTech</option>
+                        <option>TechKids</option>
+                        <option>Auxiliar de Veterinário</option>
+                        <option>Vip</option>
+                        <option>Minecraft (gratuito)</option>
+                        <option>Roblox (gratuito)</option>
+                    </select>
+                </div>
+                <label class="check">
+                    <input type="checkbox" required />
+                    <span>Li e concordo com a <a href="#">Política de Privacidade</a>.</span>
+                </label>
+                <button type="submit" class="btn btn--accent btn--full">
+                    <span>Quero minha vaga</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </form>
+
+            <aside class="cta-contact">
+                <a class="cta-contact__card" href="https://api.whatsapp.com/send?phone=5516972149434" target="_blank" rel="noopener">
+                    <div class="cta-contact__icon" style="background:#25D366"><i class="fa-brands fa-whatsapp"></i></div>
+                    <div>
+                        <strong>WhatsApp</strong>
+                        <span>(16) 2102-0077</span>
+                    </div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a class="cta-contact__card" href="tel:+551621020077">
+                    <div class="cta-contact__icon" style="background:#FF6600"><i class="fa-solid fa-phone"></i></div>
+                    <div>
+                        <strong>Telefone</strong>
+                        <span>(16) 2102-0077</span>
+                    </div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a class="cta-contact__card" href="https://maps.google.com" target="_blank" rel="noopener">
+                    <div class="cta-contact__icon" style="background:#002744"><i class="fa-solid fa-location-dot"></i></div>
+                    <div>
+                        <strong>Unidade</strong>
+                        <span>Ribeirão Preto · SP</span>
+                    </div>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <div class="cta-contact__hours">
+                    <h4>Atendimento</h4>
+                    <p>Seg a Sex · 08h às 22h</p>
+                    <p>Sáb · 08h às 14h</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- ░░░░░░░░░░░░░░░ FOOTER ░░░░░░░░░░░░░░░ -->
+<footer class="site-footer">
+    <div class="container site-footer__grid">
+        <div class="site-footer__brand">
+            <img src="assets/logo-remington.png" alt="Remington" />
+            <p>Educação para o Futuro desde 1969. Mais de 56 anos formando profissionais em Ribeirão Preto.</p>
+            <div class="site-footer__social">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="site-footer__col">
+            <h4>Institucional</h4>
+            <a href="#institucional">Sobre a Remington</a>
+            <a href="#institucional">57 Anos</a>
+            <a href="#institucional">Ribeirão Preto</a>
+            <a href="#programa">Empregabilidade</a>
+            <a href="depoimentos.html">Depoimentos</a>
+        </div>
+
+        <div class="site-footer__col">
+            <h4>Cursos profissionalizantes</h4>
+            <a href="#cursos">InovaTech</a>
+            <a href="#cursos">TechKids</a>
+            <a href="#cursos">Auxiliar de Veterinário</a>
+            <a href="#cursos">Vip</a>
+        </div>
+
+        <div class="site-footer__col">
+            <h4>Gratuitos</h4>
+            <a href="#cursos">Minecraft</a>
+            <a href="#cursos">Roblox</a>
+            <h4 style="margin-top:28px;">Conteúdo</h4>
+            <a href="#blog">Blog</a>
+            <a href="#blog">Tutoriais</a>
+        </div>
+
+        <div class="site-footer__col site-footer__ctas">
+            <a class="btn btn--ghost btn--ghost-dark" href="#contato"><span>Quero fazer um curso</span></a>
+            <a class="btn btn--ghost btn--ghost-dark" href="#contato"><span>Trabalhe conosco</span></a>
+            <a class="btn btn--ghost btn--ghost-dark" href="#contato"><span>Dúvidas</span></a>
+        </div>
+    </div>
+
+    <div class="site-footer__bar">
+        <div class="container site-footer__bar-inner">
+            <small>© <span id="y">2026</span> Remington Educação para o Futuro · Todos os direitos reservados</small>
+            <small>Ribeirão Preto · SP · (16) 2102-0077</small>
+        </div>
+    </div>
+</footer>
+
+<!-- ░░░░░░░░░░░░░░░ WhatsApp Floating ░░░░░░░░░░░░░░░ -->
+<a class="float-whatsapp" href="https://api.whatsapp.com/send?phone=5516972149434" target="_blank" rel="noopener" aria-label="Fale no WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="float-whatsapp__pulse"></span>
+</a>
+
+<!-- ░░░░░░░░░░░░░░░ Cursor Spotlight ░░░░░░░░░░░░░░░ -->
+<div class="cursor-spotlight" data-spotlight aria-hidden="true"></div>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

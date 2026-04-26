@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="theme-color" content="#002744" />
+<title>Depoimentos · Jovens Aprendizes — Remington</title>
+<meta name="description" content="Conheça os alunos que conquistaram sua primeira vaga com a Remington. Histórias reais de jovens aprendizes que transformaram estudo em carreira em Ribeirão Preto." />
+<link rel="icon" type="image/png" href="assets/favicon.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/lenis@1.1.13/dist/lenis.css" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ░░░░░░░░░░░░░░░ PAGE LOADER ░░░░░░░░░░░░░░░ -->
+<div class="page-loader" data-loader>
+    <div class="page-loader__mark">
+        <span>R</span>
+        <span>E</span>
+        <span>M</span>
+        <span>I</span>
+        <span>N</span>
+        <span>G</span>
+        <span>T</span>
+        <span>O</span>
+        <span>N</span>
+    </div>
+</div>
+
+<!-- ░░░░░░░░░░░░░░░ HEADER ░░░░░░░░░░░░░░░ -->
+<header class="site-header" data-header>
+    <div class="container site-header__inner">
+        <a class="site-header__logo" href="index.html" aria-label="Remington — Home">
+            <img src="assets/logo-remington.png" alt="Remington — Educação para o Futuro" />
+        </a>
+
+        <nav class="site-nav" aria-label="Navegação principal">
+            <ul>
+                <li><a href="index.html#institucional">Sobre</a></li>
+                <li>
+                    <a href="index.html#cursos" class="has-sub">Cursos <i class="fa-solid fa-chevron-down"></i></a>
+                    <div class="site-nav__dropdown" role="menu">
+                        <a href="index.html#cursos" role="menuitem"><span class="dot" style="background:#FF6600"></span>InovaTech</a>
+                        <a href="index.html#cursos" role="menuitem"><span class="dot" style="background:#FFBA00"></span>TechKids</a>
+                        <a href="index.html#cursos" role="menuitem"><span class="dot" style="background:#00AEFF"></span>Auxiliar de Veterinário</a>
+                        <a href="index.html#cursos" role="menuitem"><span class="dot" style="background:#FF1307"></span>Vip</a>
+                        <a href="index.html#cursos" role="menuitem"><span class="dot" style="background:#2AC77D"></span>Minecraft</a>
+                        <a href="index.html#cursos" role="menuitem"><span class="dot" style="background:#8A7BFF"></span>Roblox</a>
+                    </div>
+                </li>
+                <li><a href="index.html#diferenciais">Diferenciais</a></li>
+                <li><a href="index.html#programa">Empregabilidade</a></li>
+                <li><a href="depoimentos.html" aria-current="page">Depoimentos</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+            </ul>
+        </nav>
+
+        <div class="site-header__ctas">
+            <a class="link-quiet" href="index.html#contato">Entrar</a>
+            <a class="btn btn--primary" href="index.html#contato">
+                <span>Matricule-se</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <button class="site-header__burger" aria-label="Abrir menu" data-burger>
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+
+    <div class="mobile-drawer" data-drawer aria-hidden="true">
+        <div class="mobile-drawer__inner">
+            <a href="index.html#institucional" data-close>Sobre</a>
+            <a href="index.html#cursos" data-close>Cursos</a>
+            <a href="index.html#diferenciais" data-close>Diferenciais</a>
+            <a href="index.html#programa" data-close>Empregabilidade</a>
+            <a href="depoimentos.html" data-close>Depoimentos</a>
+            <a href="index.html#blog" data-close>Blog</a>
+            <div class="mobile-drawer__ctas">
+                <a class="btn btn--ghost" href="index.html#contato" data-close>Entrar</a>
+                <a class="btn btn--primary" href="index.html#contato" data-close><span>Matricule-se</span><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+
+<!-- ░░░░░░░░░░░░░░░ HERO ░░░░░░░░░░░░░░░ -->
+<section class="dep-hero">
+    <div class="dep-hero__bg">
+        <div class="dep-hero__grid"></div>
+        <div class="dep-hero__glow"></div>
+    </div>
+
+    <div class="container dep-hero__inner">
+        <span class="eyebrow eyebrow--on-dark" data-reveal>
+            <span class="eyebrow__dot"></span>
+            <span>Jovens Aprendizes · Programa de Empregabilidade</span>
+        </span>
+
+        <h1 class="dep-hero__title" data-reveal-lines>
+            <span class="line"><span>Alunos que</span></span>
+            <span class="line"><span>transformaram estudo</span></span>
+            <span class="line"><span>em <em>carreira real.</em></span></span>
+        </h1>
+
+        <p class="dep-hero__sub" data-reveal>
+            Cada história aqui é a prova de que o <strong>Prepara, Qualifica e Encaminha</strong> funciona. Conheça os jovens que saíram das nossas salas de aula direto para o mercado de trabalho.
+        </p>
+
+        <div class="dep-hero__stats" data-reveal>
+            <div class="dep-hero__stat">
+                <span class="dep-hero__stat-num"><span data-counter="1000">0</span><em>+</em></span>
+                <p>alunos contratados</p>
+            </div>
+            <div class="dep-hero__stat">
+                <span class="dep-hero__stat-num"><span data-counter="50">0</span><em>+</em></span>
+                <p>empresas parceiras</p>
+            </div>
+            <div class="dep-hero__stat">
+                <span class="dep-hero__stat-num"><span data-counter="56">0</span><em>+</em></span>
+                <p>anos de história</p>
+            </div>
+            <div class="dep-hero__stat">
+                <span class="dep-hero__stat-num"><span data-counter="98">0</span><em>%</em></span>
+                <p>satisfação dos egressos</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ░░░░░░░░░░░░░░░ GRID DE DEPOIMENTOS ░░░░░░░░░░░░░░░ -->
+<section class="dep-grid-section" data-scene>
+    <div class="container">
+
+        <header class="section-head">
+            <div>
+                <span class="eyebrow eyebrow--dark" data-reveal><span class="eyebrow__dot"></span><span>Histórias reais</span></span>
+                <h2 class="section-title" data-reveal-lines>
+                    <span class="line"><span>Do curso à</span></span>
+                    <span class="line"><span><em>primeira carteira</em></span></span>
+                    <span class="line"><span>assinada.</span></span>
+                </h2>
+            </div>
+            <p class="section-side" data-reveal>
+                Tecnologia, saúde animal, dados, IoT — cada trilha abre uma porta diferente. Esses alunos cruzaram essa porta com a Remington ao lado.
+            </p>
+        </header>
+
+        <div class="dep-grid">
+
+            <!-- 01 -->
+            <article class="alumni-card" style="--card-accent:#FF6600;" data-reveal-card>
+                <div class="alumni-card__top">
+                    <div class="alumni-card__avatar">AL</div>
+                    <div class="alumni-card__info">
+                        <div class="alumni-card__name">Ana Lima</div>
+                        <div class="alumni-card__curso">InovaTech</div>
+                    </div>
+                </div>
+                <div class="alumni-card__job">
+                    <span class="alumni-card__role">Desenvolvedora Front-End Jr.</span>
+                    <span class="alumni-card__company"><i class="fa-solid fa-building"></i> Stefanini · Ribeirão Preto</span>
+                </div>
+                <p class="alumni-card__quote">A Remington me deu a base técnica e a confiança para encarar minha primeira entrevista na área de tecnologia.</p>
+            </article>
+
+            <!-- 02 -->
+            <article class="alumni-card" style="--card-accent:#FF6600;" data-reveal-card>
+                <div class="alumni-card__top">
+                    <div class="alumni-card__avatar">LF</div>
+                    <div class="alumni-card__info">
+                        <div class="alumni-card__name">Lucas Ferreira</div>
+                        <div class="alumni-card__curso">InovaTech</div>
+                    </div>
+                </div>
+                <div class="alumni-card__job">
+                    <span class="alumni-card__role">Analista de Suporte Jr.</span>
+                    <span class="alumni-card__company"><i class="fa-solid fa-building"></i> Raízen · Ribeirão Preto</span>
+                </div>
+                <p class="alumni-card__quote">Aprendi na prática o que o mercado precisava. Três meses após me formar, já estava empregado.</p>
+            </article>
+
+            <!-- 03 -->
+            <article class="alumni-card" style="--card-accent:#00AEFF;" data-reveal-card>
+                <div class="alumni-card__top">
+                    <div class="alumni-card__avatar">MS</div>
+                    <div class="alumni-card__info">
+                        <div class="alumni-card__name">Mariana Souza</div>
+                        <div class="alumni-card__curso">Auxiliar de Veterinário</div>
+                    </div>
+                </div>
+                <div class="alumni-card__job">
+                    <span class="alumni-card__role">Auxiliar Veterinária</span>
+                    <span class="alumni-card__company"><i class="fa-solid fa-building"></i> PetLove · Ribeirão Preto</span>
+                </div>
+                <p class="alumni-card__quote">O curso me abriu portas que eu não sabia que existiam. Hoje trabalho com o que sempre amei.</p>
+            </article>
+
+            <!-- 04 -->
+            <article class="alumni-card" style="--card-accent:#FF6600;" data-reveal-card>
+                <div class="alumni-card__top">
+                    <div class="alumni-card__avatar">PR</div>
+                    <div class="alumni-card__info">
+                        <div class="alumni-card__name">Pedro Rocha</div>
+                        <div class="alumni-card__curso">InovaTech</div>
+                    </div>
+                </div>
+                <div class="alumni-card__job">
+                    <span class="alumni-card__role">Desenvolvedor Back-End Jr.</span>
+                    <span class="alumni-card__company"><i class="fa-solid fa-building"></i> TOTVS · Ribeirão Preto</span>
+                </div>
+                <p class="alumni-card__quote">As aulas de Python e os projetos práticos foram o diferencial que me destacou na hora da entrevista.</p>
+            </article>
+
+            <!-- 05 -->
+            <article class="alumni-card" style="--card-accent:#00AEFF;" data-reveal-card>
+                <div class="alumni-card__top">
+                    <div class="alumni-card__avatar">FA</div>
+                    <div class="alumni-card__info">
+                        <div class="alumni-card__name">Fernanda Alves</div>
+                        <div class="alumni-card__curso">Auxiliar de Veterinário</div>
+                    </div>
+                </div>
+                <div class="alumni-card__job">
+                    <span class="alumni-card__role">Auxiliar em Clínica Veterinária</span>
+                    <span class="alumni-card__company"><i class="fa-solid fa-building"></i> VetCare · Ribeirão Preto</span>
+                </div>
+                <p class="alumni-card__quote">Recomendo para qualquer pessoa que queira entrar na área veterinária com segurança e com respaldo técnico real.</p>
+            </article>
+
+            <!-- 06 -->
+            <article class="alumni-card" style="--card-accent:#FF6600;" data-reveal-card>
+                <div class="alumni-card__top">
+                    <div class="alumni-card__avatar">GC</div>
+                    <div class="alumni-card__info">
+                        <div class="alumni-card__name">Gabriel Costa</div>
+                        <div class="alumni-card__curso">InovaTech</div>
+                    </div>
+                </div>
+                <div class="alumni-card__job">
+                    <span class="alumni-card__role">Desenvolvedor IoT Jr.</span>
+                    <span class="alumni-card__company"><i class="fa-solid fa-building"></i> ABB · Ribeirão Preto</span>
+                </div>
+                <p class="alumni-card__quote">O módulo de IoT me diferenciou de todos os outros candidatos no processo seletivo. Foi decisivo para eu ser contratado.</p>
+            </article>
+
+            <!-- 07 -->
+            <article class="alumni-card" style="--card-accent:#FF6600;" data-reveal-card>
+                <div class="alumni-card__top">
+                    <div class="alumni-card__avatar">CD</div>
+                    <div class="alumni-card__info">
+                        <div class="alumni-card__name">Camila Dias</div>
+                        <div class="alumni-card__curso">InovaTech</div>
+                    </div>
+                </div>
+                <div class="alumni-card__job">
+                    <span class="alumni-card__role">Analista de Dados Jr.</span>
+                    <span class="alumni-card__company"><i class="fa-solid fa-building"></i> iFood · Ribeirão Preto</span>
+                </div>
+                <p class="alumni-card__quote">Saí do curso pronta para o mercado. Os professores realmente vivem o que ensinam — isso faz toda a diferença.</p>
+            </article>
+
+            <!-- 08 -->
+            <article class="alumni-card" style="--card-accent:#FF6600;" data-reveal-card>
+                <div class="alumni-card__top">
+                    <div class="alumni-card__avatar">RN</div>
+                    <div class="alumni-card__info">
+                        <div class="alumni-card__name">Rafael Nunes</div>
+                        <div class="alumni-card__curso">InovaTech</div>
+                    </div>
+                </div>
+                <div class="alumni-card__job">
+                    <span class="alumni-card__role">Programador Jr.</span>
+                    <span class="alumni-card__company"><i class="fa-solid fa-building"></i> Grupo Cornélio · Ribeirão Preto</span>
+                </div>
+                <p class="alumni-card__quote">A metodologia prática fez toda a diferença. Cada aula era construída em torno de um problema real do mercado.</p>
+            </article>
+
+            <!-- 09 -->
+            <article class="alumni-card" style="--card-accent:#00AEFF;" data-reveal-card>
+                <div class="alumni-card__top">
+                    <div class="alumni-card__avatar">IM</div>
+                    <div class="alumni-card__info">
+                        <div class="alumni-card__name">Isabela Moura</div>
+                        <div class="alumni-card__curso">Auxiliar de Veterinário</div>
+                    </div>
+                </div>
+                <div class="alumni-card__job">
+                    <span class="alumni-card__role">Técnica em Petshop</span>
+                    <span class="alumni-card__company"><i class="fa-solid fa-building"></i> Cobasi · Ribeirão Preto</span>
+                </div>
+                <p class="alumni-card__quote">O programa de empregabilidade da Remington foi fundamental. Eles me prepararam e me conectaram com a empresa certa.</p>
+            </article>
+
+            <!-- 10 -->
+            <article class="alumni-card" style="--card-accent:#FF6600;" data-reveal-card>
+                <div class="alumni-card__top">
+                    <div class="alumni-card__avatar">BC</div>
+                    <div class="alumni-card__info">
+                        <div class="alumni-card__name">Bruno Cardoso</div>
+                        <div class="alumni-card__curso">InovaTech</div>
+                    </div>
+                </div>
+                <div class="alumni-card__job">
+                    <span class="alumni-card__role">Analista de TI Jr.</span>
+                    <span class="alumni-card__company"><i class="fa-solid fa-building"></i> Unimed · Ribeirão Preto</span>
+                </div>
+                <p class="alumni-card__quote">Fiz o InovaTech e em menos de seis meses já estava trabalhando na área. Não esperava uma transição tão rápida.</p>
+            </article>
+
+            <!-- 11 -->
+            <article class="alumni-card" style="--card-accent:#00AEFF;" data-reveal-card>
+                <div class="alumni-card__top">
+                    <div class="alumni-card__avatar">JP</div>
+                    <div class="alumni-card__info">
+                        <div class="alumni-card__name">Juliana Peixoto</div>
+                        <div class="alumni-card__curso">Auxiliar de Veterinário</div>
+                    </div>
+                </div>
+                <div class="alumni-card__job">
+                    <span class="alumni-card__role">Auxiliar de Veterinária</span>
+                    <span class="alumni-card__company"><i class="fa-solid fa-building"></i> Hospital Vet UNAERP · Ribeirão Preto</span>
+                </div>
+                <p class="alumni-card__quote">O aprendizado foi completo — teoria e muita prática clínica real. Cheguei ao hospital preparada para trabalhar desde o primeiro dia.</p>
+            </article>
+
+            <!-- 12 -->
+            <article class="alumni-card" style="--card-accent:#FF6600;" data-reveal-card>
+                <div class="alumni-card__top">
+                    <div class="alumni-card__avatar">TM</div>
+                    <div class="alumni-card__info">
+                        <div class="alumni-card__name">Thiago Martins</div>
+                        <div class="alumni-card__curso">InovaTech</div>
+                    </div>
+                </div>
+                <div class="alumni-card__job">
+                    <span class="alumni-card__role">Desenvolvedor Front-End Jr.</span>
+                    <span class="alumni-card__company"><i class="fa-solid fa-building"></i> Creditas · Ribeirão Preto</span>
+                </div>
+                <p class="alumni-card__quote">Nunca imaginei que em 12 meses estaria trabalhando como desenvolvedor em uma fintech. A Remington tornou isso possível.</p>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- ░░░░░░░░░░░░░░░ CTA ░░░░░░░░░░░░░░░ -->
+<section class="dep-cta" data-scene>
+    <div class="container">
+        <div class="dep-cta__inner" data-reveal>
+            <span class="eyebrow eyebrow--dark">
+                <span class="eyebrow__dot"></span>
+                <span>Próximo passo</span>
+            </span>
+            <h2>Sua história <em>começa aqui.</em></h2>
+            <p>Junte-se a mais de mil alunos que transformaram a Remington em trampolim para a carreira. Nosso programa de empregabilidade está esperando por você.</p>
+            <div class="dep-cta__btns">
+                <a class="btn btn--accent" href="index.html#contato">
+                    <span>Quero me matricular</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a class="btn btn--ghost-dark" href="index.html#programa">
+                    <span>Conheça o programa</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- ░░░░░░░░░░░░░░░ FOOTER ░░░░░░░░░░░░░░░ -->
+<footer class="site-footer">
+    <div class="container site-footer__grid">
+        <div class="site-footer__brand">
+            <img src="assets/logo-remington.png" alt="Remington" />
+            <p>Educação para o Futuro desde 1969. Mais de 56 anos formando profissionais em Ribeirão Preto.</p>
+            <div class="site-footer__social">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+        <div class="site-footer__col">
+            <h4>Institucional</h4>
+            <a href="index.html#institucional">Sobre a Remington</a>
+            <a href="index.html#institucional">57 Anos</a>
+            <a href="index.html#institucional">Ribeirão Preto</a>
+            <a href="index.html#programa">Empregabilidade</a>
+            <a href="depoimentos.html">Depoimentos</a>
+        </div>
+
+        <div class="site-footer__col">
+            <h4>Cursos profissionalizantes</h4>
+            <a href="index.html#cursos">InovaTech</a>
+            <a href="index.html#cursos">TechKids</a>
+            <a href="index.html#cursos">Auxiliar de Veterinário</a>
+            <a href="index.html#cursos">Vip</a>
+        </div>
+
+        <div class="site-footer__col">
+            <h4>Gratuitos</h4>
+            <a href="index.html#cursos">Minecraft</a>
+            <a href="index.html#cursos">Roblox</a>
+            <h4 style="margin-top:28px;">Conteúdo</h4>
+            <a href="index.html#blog">Blog</a>
+            <a href="index.html#blog">Tutoriais</a>
+        </div>
+
+        <div class="site-footer__col site-footer__ctas">
+            <a class="btn btn--ghost btn--ghost-dark" href="index.html#contato"><span>Quero fazer um curso</span></a>
+            <a class="btn btn--ghost btn--ghost-dark" href="index.html#contato"><span>Trabalhe conosco</span></a>
+            <a class="btn btn--ghost btn--ghost-dark" href="index.html#contato"><span>Dúvidas</span></a>
+        </div>
+    </div>
+
+    <div class="site-footer__bar">
+        <div class="container site-footer__bar-inner">
+            <small>© <span id="y">2026</span> Remington Educação para o Futuro · Todos os direitos reservados</small>
+            <small>Ribeirão Preto · SP · (16) 2102-0077</small>
+        </div>
+    </div>
+</footer>
+
+<!-- WhatsApp Floating -->
+<a class="float-whatsapp" href="https://api.whatsapp.com/send?phone=5516972149434" target="_blank" rel="noopener" aria-label="Fale no WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="float-whatsapp__pulse"></span>
+</a>
+
+<!-- Cursor Spotlight -->
+<div class="cursor-spotlight" data-spotlight aria-hidden="true"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
