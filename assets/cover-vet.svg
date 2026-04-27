@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0e1729"/>
+      <stop offset="45%" stop-color="#114065"/>
+      <stop offset="100%" stop-color="#0b263d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="760" fill="url(#bg)"/>
+  <text x="88" y="180" fill="#fff" font-family="Rajdhani, Arial, sans-serif" font-size="96" font-weight="700">AUXILIAR DE VETERINARIO</text>
+  <text x="88" y="246" fill="#d0d7ff" font-family="Montserrat, Arial, sans-serif" font-size="30">Capacitacao pratica para clinicas, petshops e hospitais veterinarios.</text>
+  <g transform="translate(864 166)" fill="rgba(255,255,255,.15)">
+    <circle cx="96" cy="96" r="46"/>
+    <circle cx="34" cy="54" r="22"/>
+    <circle cx="156" cy="54" r="22"/>
+    <circle cx="58" cy="10" r="20"/>
+    <circle cx="132" cy="10" r="20"/>
+  </g>
+</svg>

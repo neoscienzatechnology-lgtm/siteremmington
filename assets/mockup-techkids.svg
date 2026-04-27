@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 1280">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b0f1f"/>
+      <stop offset="50%" stop-color="#25114d"/>
+      <stop offset="100%" stop-color="#043467"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8A2BE2"/>
+      <stop offset="100%" stop-color="#00D4FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="1280" fill="url(#bg)"/>
+  <g opacity=".18" stroke="url(#accent)" stroke-width="3" fill="none">
+    <path d="M80 190h220l74 74h124"/>
+    <path d="M642 980H476l-64-64H234"/>
+    <circle cx="580" cy="260" r="46"/>
+    <circle cx="184" cy="1040" r="36"/>
+  </g>
+  <text x="72" y="196" fill="#d6d9ff" font-family="Montserrat, Arial, sans-serif" font-size="28" letter-spacing="4">TRILHA KIDS</text>
+  <text x="72" y="300" fill="#fff" font-family="Rajdhani, Arial, sans-serif" font-size="112" font-weight="700">TECHKIDS</text>
+  <text x="72" y="372" fill="#c4caea" font-family="Montserrat, Arial, sans-serif" font-size="30">Robotica, IA e criatividade para 8 a 14 anos.</text>
+  <rect x="72" y="450" width="576" height="300" rx="32" fill="rgba(255,255,255,.05)" stroke="rgba(255,255,255,.09)"/>
+  <text x="114" y="545" fill="#9de2ff" font-family="Rajdhani, Arial, sans-serif" font-size="62" font-weight="700">CRIAR</text>
+  <text x="114" y="620" fill="#efefff" font-family="Rajdhani, Arial, sans-serif" font-size="62" font-weight="700">PROGRAMAR</text>
+  <text x="114" y="695" fill="#d656ff" font-family="Rajdhani, Arial, sans-serif" font-size="62" font-weight="700">INOVAR</text>
+  <image href="logo-r1-ia.png" x="165" y="850" width="390" height="250" preserveAspectRatio="xMidYMid meet"/>
+</svg>

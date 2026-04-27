@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080d1d"/>
+      <stop offset="55%" stop-color="#15143a"/>
+      <stop offset="100%" stop-color="#06244a"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d14fff"/>
+      <stop offset="100%" stop-color="#2cd4ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <g opacity=".22" stroke="url(#line)" stroke-width="2" fill="none">
+    <path d="M90 100h310l70 70h220"/>
+    <path d="M160 610h250l92-92h320"/>
+    <path d="M1020 120h140v140"/>
+    <path d="M1060 540h110V410"/>
+  </g>
+  <rect x="80" y="80" width="1120" height="560" rx="28" fill="rgba(255,255,255,.03)" stroke="rgba(255,255,255,.09)"/>
+  <text x="120" y="190" fill="#d7dbff" font-family="Montserrat, Arial, sans-serif" font-size="34" letter-spacing="4">PROGRAMA DESTAQUE</text>
+  <text x="120" y="285" fill="#ffffff" font-family="Rajdhani, Arial, sans-serif" font-size="108" font-weight="700">INOVATECH</text>
+  <text x="120" y="350" fill="#b0b7d9" font-family="Montserrat, Arial, sans-serif" font-size="34">Programacao, IA, automacao e IoT com pratica real.</text>
+  <g transform="translate(120 430)">
+    <rect width="210" height="68" rx="34" fill="#8A2BE2"/>
+    <text x="38" y="43" fill="#fff" font-family="Montserrat, Arial, sans-serif" font-size="28" font-weight="700">IA APLICADA</text>
+  </g>
+  <g transform="translate(370 430)">
+    <rect width="215" height="68" rx="34" fill="#2563FF"/>
+    <text x="36" y="43" fill="#fff" font-family="Montserrat, Arial, sans-serif" font-size="28" font-weight="700">PROJETOS</text>
+  </g>
+  <image href="logo-r1-ia.png" x="838" y="174" width="266" height="266" preserveAspectRatio="xMidYMid meet"/>
+</svg>
